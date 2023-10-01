@@ -40,7 +40,7 @@ function validation() {
 function handleSubmit(e) {
     e.preventDefault();
     if (validation()) {
-        if (day.value > day) {
+        if (day.value > dayEntered) {
             dayEntered = dayEntered + months[monthEntered - 1];
             monthEntered = monthEntered - 1;
         }
